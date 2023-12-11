@@ -1,0 +1,49 @@
+
+.control-panel-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (min-width: 503px) {
+    .control-panel-section {
+        flex-direction: row;
+    }
+}
+
+.control-panel-container {
+    border: 1px solid black;
+    height: 500px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+    margin: 10px;
+}
+
+.individual-elevator-button {
+    height: 10%;
+    width: 70px;
+    border-radius: 10px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.individual-elevator-button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
