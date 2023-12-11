@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "87177b48-a1eb-4645-a9dc-c92a800d7df9",
+		"name": "elevator-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31638444"
+	},
+	"item": [
+		{
+			"name": "api/lift/request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/lift/request",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"lift",
+						"request"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://fe20262a-7b4f-4c51-a4e8-ea72cd87ab60.mock.pstmn.io/api/lift/request",
+							"protocol": "https",
+							"host": [
+								"fe20262a-7b4f-4c51-a4e8-ea72cd87ab60",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"lift",
+								"request"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{“lift”:4}"
+				}
+			]
+		},
+		{
+			"name": "api/lift/status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/lift/status",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"lift",
+						"status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fe20262a-7b4f-4c51-a4e8-ea72cd87ab60.mock.pstmn.io/api/lift/status",
+							"protocol": "https",
+							"host": [
+								"fe20262a-7b4f-4c51-a4e8-ea72cd87ab60",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"lift",
+								"status"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{“lifts”:\n { 0: {\n “floor”:0,\n “destinations”:\n [1,5,10]\n },\n 1: {\n “floor”:0,\n “destinations”:\n [1,10]\n },\n }\n}"
+				}
+			]
+		},
+		{
+			"name": "api/lift/config",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/lift/config",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"lift",
+						"config"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://fe20262a-7b4f-4c51-a4e8-ea72cd87ab60.mock.pstmn.io/api/lift/config",
+							"protocol": "https",
+							"host": [
+								"fe20262a-7b4f-4c51-a4e8-ea72cd87ab60",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"api",
+								"lift",
+								"config"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{“lifts”:\n { 0: {\n “serviced_floors”:\n [0,1,2,3,4,5,6,7,8,9,10]\n },\n 1: {\n “serviced_floors”:\n [0,7,8,9,10]\n },\n }\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://fe20262a-7b4f-4c51-a4e8-ea72cd87ab60.mock.pstmn.io"
+		}
+	]
+}
